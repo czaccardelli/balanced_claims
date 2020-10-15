@@ -1,4 +1,4 @@
-hof_ask_for_claim_interaction = {
+﻿hof_ask_for_claim_interaction = {
 	category = interaction_category_diplomacy
 
 	desc = hof_ask_for_claim_interaction_desc

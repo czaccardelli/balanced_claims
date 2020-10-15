@@ -1,4 +1,4 @@
-hof_ask_for_claim_interaction_effect = {
+﻿hof_ask_for_claim_interaction_effect = {
 	scope:secondary_recipient = {
 		add_opinion = {
 			target = scope:actor
