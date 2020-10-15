@@ -9,7 +9,7 @@
 	scope:actor = {
 		add_piety = {
 			value = claim_piety_value
-			multiply = -2
+			multiply = -1
 		}
 		if = {
 			limit = { always = scope:claim_hook }
