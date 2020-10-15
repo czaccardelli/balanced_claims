@@ -202,7 +202,41 @@ hof_ask_for_claim_interaction = {
 				}
 			}
 		}
-		
+
+        modifier = { # Less likely the higher their tier is compared to you
+			add = {
+				add = -10
+				if = {
+					limit = {
+						scope:secondary_recipient = {
+							tier_difference = {
+								target = scope:actor
+								value >= 2
+							}
+						}
+					}
+					add = -10
+				}
+				if = {
+					limit = {
+						scope:secondary_recipient = {
+							tier_difference = {
+								target = scope:actor
+								value >= 3
+							}
+						}
+					}
+					add = -10
+				}
+			}
+			desc = THEY_ARE_HIGHER_TIER
+			scope:secondary_recipient = {
+				tier_difference = {
+					target = scope:actor
+					value >= 1
+				}
+			}
+		}
 		modifier = { # Bonus for adults to ask on children
 			add = 15
 			desc = THEY_ARE_A_CHILD

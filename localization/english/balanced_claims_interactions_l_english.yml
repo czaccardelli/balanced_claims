@@ -1,0 +1,2 @@
+l_english:
+ THEY_ARE_HIGHER_TIER:0 "[secondary_recipient.GetShortUIName|U] is of a higher [rank|E] than you: $VALUE|=+0$"
