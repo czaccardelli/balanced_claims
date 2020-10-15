@@ -1,0 +1,21 @@
+hof_ask_for_claim_interaction_effect = {
+	scope:secondary_recipient = {
+		add_opinion = {
+			target = scope:actor
+			modifier = claimed_my_title_opinion
+			opinion = -50
+		}
+	}
+	scope:actor = {
+		add_piety = {
+			value = claim_piety_value
+			multiply = -2
+		}
+		if = {
+			limit = { always = scope:claim_hook }
+			use_hook = scope:recipient
+		}
+		add_pressed_claim = scope:target
+	}
+    scope:actor
+}
