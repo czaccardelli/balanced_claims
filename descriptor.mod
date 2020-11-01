@@ -7,4 +7,3 @@ tags={
 }
 name="Balanced Claims"
 supported_version="1.1.3"
-path="mod/balanced_claims"
